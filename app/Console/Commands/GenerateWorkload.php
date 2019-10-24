@@ -46,7 +46,15 @@ class GenerateWorkload extends Command
             dispatch(with(new GenericJob())->onQueue('high-load'));
             dispatch(with(new GenericJob())->onQueue('high-load'));
             dispatch(with(new GenericJob())->onQueue('high-load'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
+            dispatch(with(new GenericJob())->onQueue('high-load-2'));
         }
-        $this->info('I have dispatched ' . $runs . ' jobs on default and ' . ($runs * 4) . ' on high load');
+        $this->info('I have dispatched ' . $runs . ' jobs on default and ' . ($runs * 4) . ' on high load and '. ($runs * 8) . ' on high load2');
     }
 }

@@ -160,8 +160,8 @@ return [
             ],
             'supervisor-2' => [
                 'connection' => 'redis',
-                'queue' => ['high-load'],
-                'balance' => 'simple',
+                'queue' => ['high-load', 'high-load-2'],
+                'balance' => 'auto',
                 'processes' => 8,
                 'tries' => 3,
             ],
