@@ -39,7 +39,7 @@ class GenerateWorkload extends Command
      */
     public function handle()
     {
-        $runs = 100;
+        $runs = 500;
         for ($i = 0; $i < $runs; $i++) {
             dispatch(with(new GenericJob())->onQueue('default'));
             dispatch(with(new FailedJob())->onQueue('high-load'));
